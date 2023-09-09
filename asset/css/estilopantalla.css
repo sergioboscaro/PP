@@ -1,0 +1,71 @@
+/*body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    text-align: center;
+}*/
+   
+
+
+            
+h1{
+   color: red;     
+}
+            
+.input_text{
+                
+    width: 200px;
+    border: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+            
+body{
+    
+    background-color: lightgrey;
+    background-image: url('AIB.png');
+    background-repeat: no-repeat;
+    background-size:    cover;
+    background-position: center center;
+}
+        
+
+            
+.label{
+    color: black;
+    float: left;
+}
+            
+.span{
+    color: black;    
+}
+            
+.textarea{
+    color: whitesmoke;
+}
+            
+.form {               
+    color: whitesmoke;    
+}
+            
+            
+p{
+    color: black;
+}
+              
+
+
+.form-inline {
+    color: black;
+}
+
+.btn {
+    background-color: gray;
+    color: white;
+   
+}

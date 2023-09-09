@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="es">      
+     
+    <head>
+        <title>Analisis de fallas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity= "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="asset/css/estilopantalla.css">
+        
+   
+        
+    </head>    
+        
+    
+    <body>
+        
+        <div>
+            <h1>Carga datos pozo</h1>      
+        </div>
+        
+    <form class="form-inline" action="/action_page.php">
+            
+        <label for="Pozo">Pozo:</label><br><br>
+        <input type="text" id="Pozo" name="nombre_pozo" class="input_text"><br><br><br>
+            
+        <div style="margin-left: 20px;"></div>
+     
+        
+        <label> Descripcion:</label><br>
+            <textarea class="input_text" id="Descripcion"></textarea><br><br>
+            
+    </form>    
+            
+            <label for="img">Imagen:</label>
+            <input type="file" id="img" name="imagen_falla" class="input_text" width="500 px" height="50 px"> <br><br>
+            
+             
+    
+            
+            
+    <form class="form-inline" action="/action_page.php">
+            
+            
+            <label for="Fluido">Fluido:</label><br>
+            <input type="number" id="Fluido" class="input_text">
+            
+            <div style="margin-left: 20px;"></div>
+            
+            <label for="Seco">Seco:</label><br>
+            <input type="number" id="Seco" name="seco" class="input_text">
+            
+            <div style="margin-left: 20px;"></div>
+            
+            <label for="Gas">Gas:</label><br>
+            <input type="number" id="Gas" name="gas" class="input_text">
+       
+    </form>    
+            <br>
+            
+            <button id="btn_cancelar" class="btn" type="button">Cancelar </button>
+            <button id="btn_enviar" class="btn" type="submit">Enviar </button><br><br>
+             
+     
+        
+        
+   
+        
+<h1>Seleccionar sistema extraccion inicial</h1>
+    
+<p>Debe elegir <strong> tipo de sea="checkbox"</strong></p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="BM" name="BM" value="BM">
+  <label for="BM"> BM</label><br>
+  <input type="checkbox" id="BES" name="BES" value="BES">
+  <label for="BES"> BES</label><br>
+  <input type="checkbox" id="PCP" name="PCP" value="PCP">
+  <label for="PCP"> PCP</label><br><br>
+  <input type="submit" value="Enviar">
+ 
+</form>  
+
+
+<h1>Seleccionar sistema extraccion final</h1>
+    
+<p>Debe elegir <strong> tipo de sea="checkbox"</strong></p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="BM" name="BM" value="BM">
+  <label for="BM"> BM</label><br>
+  <input type="checkbox" id="BES" name="BES" value="BES">
+  <label for="BES"> BES</label><br>
+  <input type="checkbox" id="PCP" name="PCP" value="PCP">
+  <label for="PCP"> PCP</label><br><br>
+  <input type="submit" value="Enviar">
+  
+
+      
+</form>
+       
+       
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ​​​​​​​crossorigin="anonymous"></script>
+
+    
+    <script src="../../asset/js/validaciones.js"></script>
+    </body>
+    
+</html>
