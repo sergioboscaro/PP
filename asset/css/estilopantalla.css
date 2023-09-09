@@ -4,9 +4,9 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-}
+}*/
 
-.contenedor {
+/*.contenedor {
     text-align: center;
 }*/
    
@@ -23,15 +23,16 @@ h1{
     border: 5px;
     padding: 5px;
     margin: 2px;
+    border-color: black;
 }
             
 body{
-    
-    background-color: lightgrey;
-    background-image: url('AIB.png');
+    margin: 20px;
+    background-color: blanchedalmond;
+    background-image: url(../imagenes/AIB.png);
     background-repeat: no-repeat;
-    background-size:    cover;
-    background-position: center center;
+    background-size:    60% 110%;
+    background-position-x: 800px;
 }
         
 
