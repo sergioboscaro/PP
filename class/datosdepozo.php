@@ -28,7 +28,7 @@ class datosdepozo{
     }
 
     static private function conexion(){
-        return new datosdepozo("mysql", "datospozos", "127.0.0.1", "root", "");
+        return new basedatos("mysql", "datospozos", "127.0.0.1", "root", "");
     }
  
     public function mostrar(){
