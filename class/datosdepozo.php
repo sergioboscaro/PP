@@ -67,7 +67,7 @@ class datosdepozo{
     
     private function actualizar() {
         $db = self::conexion();
-        return $db->update("datosfallas", "Pozo = ?","id = ?","Descripcion = ?","Fluido = ?","Seco = ?","Gas = ?", array( $this->Pozo, $this->id, $this->Descripcion, $this->Fluido, $this->Seco, $this->Gas));
+        return $db->update("datosfallas", "id = ?","Pozo = ?","Descripcion = ?","Fluido = ?","Seco = ?","Gas = ?", array( $this->Pozo, $this->id, $this->Descripcion, $this->Fluido, $this->Seco, $this->Gas));
     
     }
 
