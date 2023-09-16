@@ -11,8 +11,8 @@
         crossorigin="anonymous">
         <link rel="stylesheet" href="asset/css/estilopantalla.css">
         
-   
-        
+      
+         
     </head>    
         
     
@@ -22,58 +22,43 @@
             <h1>Carga datos pozo</h1>      
         </div>
         
-    <form class="form-inline" action="/action_page.php">
+        <form method="post" action="conexion.php">
             
-        <label for="Pozo">Pozo:</label><br><br>
-        <input type="text" id="Pozo" name="nombre_pozo" class="input_text"><br><br><br>
+        <label for="Pozo">Pozo:</label><br>
+        <input type="text" id="Pozo" name="nombre_pozo" class="input_text"><br>
             
-        <div style="margin-left: 20px;"></div>
+            <div style="margin-left: 20px;"></div>
      
         
         <label> Descripcion falla:</label><br>
-            <textarea class="input_text" id="Descripcion"></textarea><br><br>
+        <textarea class="input_text" id="Descripcion" name="descripcion"></textarea><br><br>
             
-    </form>    
-            
-            <label for="img">Imagen:</label>
-            <input type="file" id="img" name="imagen_falla" class="input_text" width="500 px" height="50 px"> <br><br>
-            
-             
-    
-            
-            
-    <form class="form-inline" action="/action_page.php">
-            
-            
-            <label for="Fluido">Fluido:</label><br>
-            <input type="number" id="Fluido" name="fluido" class="input_text">
+        <label for="Fluido">Fluido:</label><br>
+        <input type="number" id="Fluido" name="fluido" class="input_text">
             
             <div style="margin-left: 20px;"></div>
             
-            <label for="Seco">Seco:</label><br>
-            <input type="number" id="Seco" name="seco" class="input_text">
+        <label for="Seco">Seco:</label><br>
+        <input type="number" id="Seco" name="seco" class="input_text">
             
             <div style="margin-left: 20px;"></div>
             
-            <label for="Gas">Gas:</label><br>
-            <input type="number" id="Gas" name="gas" class="input_text">
-       
-    </form>    
-            <br>
-            
-            <button id="btn_cancelar" class="btn" type="button">Cancelar </button>
-            <button id="btn_enviar" class="btn" type="submit">Enviar </button><br><br>
+        <label for="Gas">Gas:</label><br>
+        <input type="number" id="Gas" name="gas" class="input_text"><br><br>
+          
+        <button id="btn_enviar" class="btn" name="enviar" type="submit">Enviar</button><br><br>
              
-     
+        </form>
         
-        
+        <label for="img">Imagen:</label>
+        <input type="file" id="img" name="imagen_falla" class="input_text" width="500 px" height="50 px"> <br><br>
    
         
 <h1>Seleccionar sistema extracción inicial</h1>
     
 <p>Debe elegir <strong> tipo de sea="checkbox"</strong></p>
 
-<form action="/action_page.php">
+<form>
   <input type="checkbox" id="BM" name="BM" value="BM">
   <label for="BM"> BM</label><br>
   <input type="checkbox" id="BES" name="BES" value="BES">
@@ -89,7 +74,7 @@
     
 <p>Debe elegir <strong> tipo de sea="checkbox"</strong></p>
 
-<form action="/action_page.php">
+<form>
   <input type="checkbox" id="BM" name="BM" value="BM">
   <label for="BM"> BM</label><br>
   <input type="checkbox" id="BES" name="BES" value="BES">
@@ -98,8 +83,7 @@
   <label for="PCP"> PCP</label><br><br>
   <input type="submit" value="Enviar">
   
-
-      
+  
 </form>
        
        

@@ -27,7 +27,7 @@ class datosdepozo{
         }    
     }
 
-    static private function conexion(){
+    public function conexion(){
         return new basedatos("mysql", "datospozos", "127.0.0.1", "root", "");
     }
  
@@ -53,9 +53,9 @@ class datosdepozo{
         
     }
     
-    private function insertar() {
+    public function insertar() {
         $db = self::conexion(); 
-        $resp = $db->insert ("datosfallas","id,Pozo,Descripcion,Fluido,Seco,Gas","?,?,?,?,?,?", array($this->Pozo, $this->id, $this->Descripcion, $this->Fluido, $this->Seco, $this->Gas));
+        $resp = $db->insert ("datosfallas","id,Pozo,Descripcion,Fluido,Seco,Gas","?,?,?,?,?,?", array($this->id, $this->Pozo, $this->Descripcion, $this->Fluido, $this->Seco, $this->Gas));
         if($resp){
             $this->id=$resp;
             $this->exists = true;
@@ -65,9 +65,9 @@ class datosdepozo{
         }
     }
     
-    private function actualizar() {
+    public function actualizar() {
         $db = self::conexion();
-        return $db->update("datosfallas", "id = ?","Pozo = ?","Descripcion = ?","Fluido = ?","Seco = ?","Gas = ?", array( $this->Pozo, $this->id, $this->Descripcion, $this->Fluido, $this->Seco, $this->Gas));
+        return $db->update("datosfallas", "id = ?","Pozo = ?","Descripcion = ?","Fluido = ?","Seco = ?","Gas = ?", array( $this->id, $this->Pozo, $this->Descripcion, $this->Fluido, $this->Seco, $this->Gas));
     
     }
 
