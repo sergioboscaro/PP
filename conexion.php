@@ -3,14 +3,18 @@
 $conexion = mysqli_connect('127.0.0.1','root','','datospozos')
         or die(mysql_error($mysqli));
 
+diferencia($conexion);
+
 function diferencia($conexion){
+    
     if(isset($_POST['enviar'])){
         insertar($conexion);
     }
-    
+    if(isset($_POST['eliminar'])){
+        eliminar($conexion);
+    }
+ 
 }
-
-insertar($conexion);
 
 function insertar ($conexion){
     
@@ -25,24 +29,24 @@ function insertar ($conexion){
     VALUES ('$pozo','$descripcion','$fluido','$seco','$gas')";
     mysqli_query($conexion,$consulta);
     mysqli_close($conexion);
+    header("Location: index.html");
     
    
 }
 
-function cargartabla($conexion){
-    $consulta = "SELECT * FROM datosfallas";
-    $resultado = mysqli_query($conexion,$consulta);
+function eliminar ($conexion){
     
-    while($fila = mysqli_fetch_array($resultado)){
-        echo "<tr>";
-        echo "<td>".$fila['nombre_pozo'];
-        echo "<td>".$fila['descripcion'];
-        echo "<td>".$fila['fluido'];
-        echo "<td>".$fila['seco'];
-        echo "<td>".$fila['gas'];
-        echo "<tr>";
-    }
+    
+    $pozo = $_POST['nombre_pozo'];
+    
+    
+    $consulta = "DELETE * FROM datosfallas WHERE Pozo='$pozo'";
+    mysqli_query($conexion,$consulta);
     mysqli_close($conexion);
+    header("Location: index.html");
+    
+   
 }
+
 ?>
 

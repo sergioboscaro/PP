@@ -10,9 +10,7 @@
         integrity= "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
         crossorigin="anonymous">
         <link rel="stylesheet" href="asset/css/estilopantalla.css">
-        
-      
-         
+       
     </head>    
         
     
@@ -21,6 +19,11 @@
         <div>
             <h1>Carga datos pozo</h1>      
         </div>
+        <hr/>
+        <p>
+            ***Ingrese de datos de pozos y tipo de falla
+               encontrada ***
+        </p>
         
         <form method="post" action="conexion.php">
             
@@ -31,7 +34,7 @@
      
         
         <label> Descripcion falla:</label><br>
-        <textarea class="input_text" id="Descripcion" name="descripcion"></textarea><br><br>
+        <textarea class="input_text" id="Descripcion" name="descripcion"></textarea><br>
             
         <label for="Fluido">Fluido:</label><br>
         <input type="number" id="Fluido" name="fluido" class="input_text">
@@ -46,52 +49,49 @@
         <label for="Gas">Gas:</label><br>
         <input type="number" id="Gas" name="gas" class="input_text"><br><br>
           
-        <button id="btn_enviar" class="btn" name="enviar" type="submit">Enviar</button><br><br>
-             
-        </form>
         
-        <label for="img">Imagen:</label>
-        <input type="file" id="img" name="imagen_falla" class="input_text" width="500 px" height="50 px"> <br><br>
-   
+        <button id="btn_enviar" class="btn" name="enviar" type="submit">Enviar</button><br><br>
+        <button id="btn_eli" class="btn" name="eliminar" type="submit">Eliminar</button><br><br>
+        
+          
+        
+        </form>
+      
+        <button class="btn" onclick= "location.href='http://localhost/BASEFALLAS/backend/view/tablaconexion.php'">Ver Tabla</button><br><br>
         
 <h1>Seleccionar sistema extracción inicial</h1>
     
-<p>Debe elegir <strong> tipo de sea="checkbox"</strong></p>
+<p>Debe elegir <strong> tipo de sistema="checkbox"</strong></p>
 
 <form>
-  <input type="checkbox" id="BM" name="BM" value="BM">
+  <input type="checkbox" id="bmout" name="bm" value="BM">
   <label for="BM"> BM</label><br>
-  <input type="checkbox" id="BES" name="BES" value="BES">
+  <input type="checkbox" id="besout" name="bes" value="BES">
   <label for="BES"> BES</label><br>
-  <input type="checkbox" id="PCP" name="PCP" value="PCP">
+  <input type="checkbox" id="pcpout" name="pcp" value="PCP">
   <label for="PCP"> PCP</label><br><br>
-  <input type="submit" value="Enviar">
+
  
 </form>  
 
 
 <h1>Seleccionar sistema extracción final</h1>
     
-<p>Debe elegir <strong> tipo de sea="checkbox"</strong></p>
+<p>Debe elegir <strong> tipo de sistema="checkbox"</strong></p>
 
 <form>
-  <input type="checkbox" id="BM" name="BM" value="BM">
+    
+  <input type="checkbox" id="bmin" name="bm" value="BM">
   <label for="BM"> BM</label><br>
-  <input type="checkbox" id="BES" name="BES" value="BES">
+  <input type="checkbox" id="besin" name="bes" value="BES">
   <label for="BES"> BES</label><br>
-  <input type="checkbox" id="PCP" name="PCP" value="PCP">
+  <input type="checkbox" id="pcpin" name="pcp" value="PCP">
   <label for="PCP"> PCP</label><br><br>
-  <input type="submit" value="Enviar">
+
   
   
 </form>
        
-       
-</body>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    ​​​​​​​crossorigin="anonymous"></script>
-    <script src="../../asset/js/validaciones.js"></script>
-
+     
     
 </html>

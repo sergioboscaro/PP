@@ -1,9 +1,8 @@
-
-
-
-            
+       
 h1{
-   color: black;     
+   color: black;
+   border-style: inherit;
+   border-color: black;
 }
             
 .input_text{
@@ -20,8 +19,9 @@ body{
     background-color: lightgray;
     background-image: url(../imagenes/AIB.png);
     background-repeat: no-repeat;
-    background-size:    60% 50%;
-    background-position-x: 700px;
+    background-size:    30% 50%;
+    background-position-x: 440px;
+    background-position-y: 100px;
 }
         
 
@@ -35,7 +35,7 @@ body{
     color: black;    
 }
             
-.textarea{
+textarea{
     color: grey;
 }
             
@@ -45,7 +45,7 @@ body{
             
             
 p{
-    color: black;
+    color: gray;
 }
               
 
@@ -55,7 +55,17 @@ p{
 }
 
 .btn {
+    
+    display: inline-block;
     background-color: gray;
     color: white;
+    alignment-adjust: central;
+    
    
 }
+
+.centrar{
+    text-align: match-parent;
+}
+
+
