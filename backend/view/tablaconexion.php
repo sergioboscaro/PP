@@ -19,6 +19,8 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
                         <td>FLUIDO</td>
                         <td>SECO</td>
                         <td>GAS</td>
+                        <td>SEASACADO</td>
+                        <td>SEABAJADO</td>
                 </tr>
                 
                 <?php
@@ -35,6 +37,8 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
                     <td><?php echo $mostrar['Fluido'] ?></td>
                     <td><?php echo $mostrar['Seco'] ?></td>
                     <td><?php echo $mostrar['Gas'] ?></td>
+                    <td><?php echo $mostrar['SeaSacado'] ?></td>
+                    <td><?php echo $mostrar['SeaBajado'] ?></td>
                 </tr>    
                 <?php    
                 }

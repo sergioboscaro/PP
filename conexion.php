@@ -24,9 +24,11 @@ function insertar ($conexion){
     $fluido = $_POST['fluido'];
     $seco = $_POST['seco'];
     $gas = $_POST['gas'];
+    $sea = $_POST['seas'];
+    $sea1= $_POST['seas1'];        
     
-    $consulta = "INSERT INTO datosfallas(Pozo,Descripcion,Fluido,Seco,Gas)
-    VALUES ('$pozo','$descripcion','$fluido','$seco','$gas')";
+    $consulta = "INSERT INTO datosfallas(Pozo,Descripcion,Fluido,Seco,Gas,SeaSacado,SeaBajado)
+    VALUES ('$pozo','$descripcion','$fluido','$seco','$gas','$sea','$sea1')";
     mysqli_query($conexion,$consulta);
     mysqli_close($conexion);
     header("Location: index.html");

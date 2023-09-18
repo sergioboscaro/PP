@@ -48,6 +48,26 @@
             
         <label for="Gas">Gas:</label><br>
         <input type="number" id="Gas" name="gas" class="input_text"><br><br>
+        
+ <p>Debe elegir tipo de sistemas = </p>
+        
+        <label for="sea">Sistema sacado</label>
+        <select name="seas" id="seas" size="1">
+           <option value="nada">--</option>
+           <option value="bm">BM</option>
+           <option value="bes">BES</option>
+           <option value="pcp">PCP</option>
+        </select><br><br>   
+        
+        
+        <label for="sea1">Sistema bajado</label>
+        <select name="seas1" id="seas1" size="1">
+           <option value="nada">--</option>
+           <option value="bm">BM</option>
+           <option value="bes">BES</option>
+           <option value="pcp">PCP</option>
+        </select><br><br>
+        
           
         
         <button id="btn_enviar" class="btn" name="enviar" type="submit">Enviar</button><br><br>
@@ -59,38 +79,9 @@
       
         <button class="btn" onclick= "location.href='http://localhost/BASEFALLAS/backend/view/tablaconexion.php'">Ver Tabla</button><br><br>
         
-<h1>Seleccionar sistema extracción inicial</h1>
-    
-<p>Debe elegir <strong> tipo de sistema="checkbox"</strong></p>
-
-<form>
-  <input type="checkbox" id="bmout" name="bm" value="BM">
-  <label for="BM"> BM</label><br>
-  <input type="checkbox" id="besout" name="bes" value="BES">
-  <label for="BES"> BES</label><br>
-  <input type="checkbox" id="pcpout" name="pcp" value="PCP">
-  <label for="PCP"> PCP</label><br><br>
-
- 
-
-
-
-<h1>Seleccionar sistema extracción final</h1>
-    
-<p>Debe elegir <strong> tipo de sistema="checkbox"</strong></p>
-
-
-    
-  <input type="checkbox" id="bmin" name="bm" value="BM">
-  <label for="BM"> BM</label><br>
-  <input type="checkbox" id="besin" name="bes" value="BES">
-  <label for="BES"> BES</label><br>
-  <input type="checkbox" id="pcpin" name="pcp" value="PCP">
-  <label for="PCP"> PCP</label><br><br>
 
   
-  
-</form>
+
        
      
     
