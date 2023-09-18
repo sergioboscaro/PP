@@ -8,12 +8,12 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+        <link href="asset/css/estilopantalla.css" rel="stylesheet" type="text/css">
     </head>
     
-    <body>
+    <body style="background-color: lightgray">
             <table border="2" >
-                <tr style="color: darkorange">
+                <tr style="color: blue">
                         <td>POZO</td>
                         <td>DESCRIPCION</td>
                         <td>FLUIDO</td>
@@ -25,7 +25,7 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
                 
                 <?php
                 
-                $sql = "SELECT * FROM datosfallas";
+                $sql = "SELECT * FROM datosfallas ORDER BY Pozo";
                 $result = mysqli_query ($conexiontabla,$sql);
                 while($mostrar = mysqli_fetch_array($result)){
                     
@@ -48,7 +48,7 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
         
       
             
-        <button onclick= "location.href='http://localhost/BASEFALLAS/index.html'">Volver pagina</button><br>
+        <button class="btn" onclick= "location.href='http://localhost/BASEFALLAS/index.html'">Volver pagina</button><br>
         
             
             

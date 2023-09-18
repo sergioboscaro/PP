@@ -42,7 +42,7 @@ function eliminar ($conexion){
     $pozo = $_POST['nombre_pozo'];
     
     
-    $consulta = "DELETE * FROM datosfallas WHERE Pozo='$pozo'";
+    $consulta = "DELETE Pozo,Descripcion,Fluido,Seco,Gas,SeaSacado,SeaBajado FROM datosfallas WHERE Pozo='$pozo'";
     mysqli_query($conexion,$consulta);
     mysqli_close($conexion);
     header("Location: index.html");
