@@ -12,8 +12,8 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
     </head>
     
     <body>
-            <table border="1" >
-                <tr>
+            <table border="2" >
+                <tr style="color: darkorange">
                         <td>POZO</td>
                         <td>DESCRIPCION</td>
                         <td>FLUIDO</td>
