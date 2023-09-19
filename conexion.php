@@ -26,9 +26,10 @@ function insertar ($conexion){
     $gas = $_POST['gas'];
     $sea = $_POST['seas'];
     $sea1= $_POST['seas1'];        
+    $fecha = $_POST['fecha'];
     
-    $consulta = "INSERT INTO datosfallas(Pozo,Descripcion,Fluido,Seco,Gas,SeaSacado,SeaBajado)
-    VALUES ('$pozo','$descripcion','$fluido','$seco','$gas','$sea','$sea1')";
+    $consulta = "INSERT INTO datosfallas(Pozo,Descripcion,Fluido,Seco,Gas,SeaSacado,SeaBajado,Fecha)
+    VALUES ('$pozo','$descripcion','$fluido','$seco','$gas','$sea','$sea1','$fecha')";
     mysqli_query($conexion,$consulta);
     mysqli_close($conexion);
     header("Location: index.html");
@@ -42,7 +43,7 @@ function eliminar ($conexion){
     $pozo = $_POST['nombre_pozo'];
     
     
-    $consulta = "DELETE Pozo,Descripcion,Fluido,Seco,Gas,SeaSacado,SeaBajado FROM datosfallas WHERE Pozo='$pozo'";
+    $consulta = "DELETE FROM datosfallas WHERE Pozo='$pozo'";
     mysqli_query($conexion,$consulta);
     mysqli_close($conexion);
     header("Location: index.html");

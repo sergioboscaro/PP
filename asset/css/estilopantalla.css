@@ -12,6 +12,7 @@ h1{
     padding: 5px;
     margin: 2px;
     border-color: black;
+    text-transform: uppercase;
 }
             
 body{
@@ -45,7 +46,7 @@ textarea{
             
             
 p{
-    color: gray;
+    color: red;
 }
               
 
@@ -66,6 +67,12 @@ p{
 
 .centrar{
     text-align: match-parent;
+}
+
+.formato_tabla{
+    
+    color: blue;
+    
 }
 
 

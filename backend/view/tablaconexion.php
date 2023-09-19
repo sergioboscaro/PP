@@ -9,11 +9,31 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="asset/css/estilopantalla.css" rel="stylesheet" type="text/css">
-    </head>
     
-    <body style="background-color: lightgray">
-            <table border="2" >
-                <tr style="color: blue">
+    <style>
+        table{
+            border-style: solid;
+            width:100%
+        }
+        th, td{
+            text-align: center;
+            padding: 8px;
+        }
+        tr:nth-child(even){background-color: #ccffcc}
+        th{
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+    </style>
+    
+    </head>
+    <body>
+        
+        <h1>TABLA DATOS POZOS</h1><br>
+        
+            <table>
+                <tr>
                         <td>POZO</td>
                         <td>DESCRIPCION</td>
                         <td>FLUIDO</td>
@@ -21,11 +41,12 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
                         <td>GAS</td>
                         <td>SEASACADO</td>
                         <td>SEABAJADO</td>
+                        <td>FECHA</td>
                 </tr>
                 
                 <?php
                 
-                $sql = "SELECT * FROM datosfallas ORDER BY Pozo";
+                $sql = "SELECT * FROM datosfallas ORDER BY Fecha DESC";
                 $result = mysqli_query ($conexiontabla,$sql);
                 while($mostrar = mysqli_fetch_array($result)){
                     
@@ -39,6 +60,7 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
                     <td><?php echo $mostrar['Gas'] ?></td>
                     <td><?php echo $mostrar['SeaSacado'] ?></td>
                     <td><?php echo $mostrar['SeaBajado'] ?></td>
+                    <td><?php echo $mostrar['Fecha'] ?></td>
                 </tr>    
                 <?php    
                 }
@@ -48,7 +70,7 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
         
       
             
-        <button class="btn" onclick= "location.href='http://localhost/BASEFALLAS/index.html'">Volver pagina</button><br>
+        <button onclick= "location.href='http://localhost/BASEFALLAS/index.html'">Volver pagina</button><br>
         
             
             
