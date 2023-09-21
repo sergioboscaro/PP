@@ -19,21 +19,21 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
             text-align: center;
             padding: 8px;
         }
-        tr:nth-child(even){background-color: #ccffcc}
-        th{
-            background-color: #04AA6D;
-            color: white;
-        }
+        tr:nth-child(even){background-color: #04AA6D}
+        th{background-color: #04AA6D;}
         
     </style>
     
     </head>
     <body>
+       
+            
         
         <h1>TABLA DATOS POZOS</h1><br>
         
             <table>
                 <tr>
+                        <td>ID</td>                    
                         <td>POZO</td>
                         <td>DESCRIPCION</td>
                         <td>FLUIDO</td>
@@ -46,13 +46,14 @@ $conexiontabla = mysqli_connect('localhost','root','','datospozos');
                 
                 <?php
                 
-                $sql = "SELECT * FROM datosfallas ORDER BY Fecha DESC";
+                $sql = "SELECT * FROM datosfallas ORDER BY id ASC";
                 $result = mysqli_query ($conexiontabla,$sql);
                 while($mostrar = mysqli_fetch_array($result)){
                     
                 ?>
                     
                 <tr>
+                    <td><?php echo $mostrar['id'] ?></td>
                     <td><?php echo $mostrar['Pozo'] ?></td>
                     <td><?php echo $mostrar['Descripcion'] ?></td>
                     <td><?php echo $mostrar['Fluido'] ?></td>

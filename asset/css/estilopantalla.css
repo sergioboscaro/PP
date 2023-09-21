@@ -1,8 +1,15 @@
-       
-h1{
-   color: black;
+     
+
+
+    
+
+.titulo{
+   color: white;
    border-style: inherit;
    border-color: black;
+   font-size: 70px;
+   text-shadow: 0 0 7px red;
+   
 }
             
 .input_text{
@@ -16,20 +23,22 @@ h1{
 }
             
 body{
-    margin: 20px;
-    background-color: lightgray;
+    margin: 40px;
+    background-color: threedhighlight;
     background-image: url(../imagenes/AIB.png);
     background-repeat: no-repeat;
-    background-size:    50% 80%;
-    background-position-x: 440px;
-    background-position-y: 100px;
+    background-size:    40% 90%;
+    background-position-x: 460px;
+    background-position-y: 210px;
+    
+    
 }
         
 
             
 .label{
-    color: black;
-    float: left;
+    color: white;
+    
 }
             
 .span{
@@ -61,7 +70,6 @@ p{
     background-color: gray;
     color: white;
     alignment-adjust: central;
-    
    
 }
 
@@ -76,3 +84,35 @@ p{
 }
 
 
+.header{
+    
+  padding: 50px;
+  text-align: center;
+  background-image: url(../imagenes/Header.png);
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 30px;    
+  background-size: 100% 100%;
+    
+}
+
+
+.btn1 {
+    
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    alignment-adjust: central;
+}
+
+.flex-container{
+    
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.img1{
+    
+    
+}

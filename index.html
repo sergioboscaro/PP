@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>      
+<html lang="es">      
      
     <head>
         <title>Analisis de fallas</title>
@@ -16,44 +16,70 @@
     
     <body>
         
-        <div>
-            <h1>Carga datos pozo</h1>      
+        <div class="header">
+            <h1 class='titulo'>Carga de datos pozos en falla</h1>      
         </div>
-        <hr/>
+        
+       
         <p>
             ***Ingrese de datos de pozos y tipo de falla
                encontrada ***
         </p>
         
+        <section>
+        
+        <img class="img1" src="asset/imagenes/OIP.jfif"/>
+        
+        </section>
+        
+        <section class="flex-container">
+        
+        <img src="asset/imagenes/OIP (1).jfif"/>
+        
+        </section>
+        
         <form method="post" action="conexion.php">
             
-        <label for="Pozo">Pozo:</label><br>
+        <label class="label" for="Pozo">Pozo:</label><br>
         <input type="text" id="Pozo" name="nombre_pozo" class="input_text"><br><br>
+        
+        <section class="flex-container">
             
+        <label class="label" for="id"></label><br>
+        <input type="number" id="id" name="iden" class="input_text" placeholder="INGRESAR ID"><br><br>   
+        
+        </section><br>
+        
+        <section class="flex-container">
+            
+            <button id="btn_eli" class="btn" name="eliminar" type="submit">Eliminar registro</button><br><br>
+            
+        </section>
+  
             <div style="margin-left: 20px;"></div>
             
-        <label for="Fecha">Fecha falla:</label><br>
+        <label class="label" for="Fecha">Fecha falla:</label><br>
         <input type="date" id="Fecha" name="fecha" class="input_text"><br><br>    
         
-        <label> Descripcion falla:</label><br>
+        <label class="label"> Descripcion falla:</label><br>
         <textarea class="input_text" id="Descripcion" name="descripcion"></textarea><br>
             
-        <label for="Fluido">Fluido:</label><br>
+        <label class="label" for="Fluido">Fluido:</label><br>
         <input type="number" id="Fluido" name="fluido" class="input_text">
             
             <div style="margin-left: 20px;"></div>
             
-        <label for="Seco">Seco:</label><br>
+        <label class="label" for="Seco">Seco:</label><br>
         <input type="number" step="any" id="Seco" name="seco" class="input_text">
             
             <div style="margin-left: 20px;"></div>
             
-        <label for="Gas">Gas:</label><br>
+        <label class="label" for="Gas">Gas:</label><br>
         <input type="number" id="Gas" name="gas" class="input_text"><br><br>
         
  <p>Debe elegir tipo de sistemas = </p>
         
-        <label for="sea">Sistema sacado</label>
+        <label class="label" for="sea">Sistema sacado</label>
         <select name="seas" id="seas" size="1">
            <option value="nada">--</option>
            <option value="bm">BM</option>
@@ -62,7 +88,7 @@
         </select><br><br>   
         
         
-        <label for="sea1">Sistema bajado</label>
+        <label class="label" for="sea1">Sistema bajado</label>
         <select name="seas1" id="seas1" size="1">
            <option value="nada">--</option>
            <option value="bm">BM</option>
@@ -72,8 +98,9 @@
         
           
         
-        <button id="btn_enviar" class="btn" name="enviar" type="submit">Enviar</button><br><br>
-        <button id="btn_eli" class="btn" name="eliminar" type="submit">Eliminar</button><br><br>
+            <button id="btn_enviar" class="btn" name="enviar" type="submit">Enviar</button><br><br>
+        
+        
         
           
         
@@ -82,9 +109,7 @@
         <button class="btn" onclick= "location.href='http://localhost/BASEFALLAS/backend/view/tablaconexion.php'">Ver Tabla</button><br><br>
         
 
-  
+    </body>    
 
-       
-     
     
 </html>
