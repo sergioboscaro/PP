@@ -26,17 +26,18 @@
                encontrada ***
         </p>
         
-        <section>
         
-        <img class="img1" src="asset/imagenes/OIP.jfif"/>
         
+        <section class="imagenes">
+        <img src="asset/imagenes/fallas.jfif"/>
+        <img src="asset/imagenes/fallas2.jfif"/>
+        <img src="asset/imagenes/fallas3.jfif"/>
+        <img src="asset/imagenes/fallas4.jfif"/>
+        <img src="asset/imagenes/OIP.jfif"/>
         </section>
+  
         
-        <section class="flex-container">
         
-        <img src="asset/imagenes/OIP (1).jfif"/>
-        
-        </section>
         
         <form method="post" action="conexion.php">
             
@@ -44,39 +45,38 @@
         <input type="text" id="Pozo" name="nombre_pozo" class="input_text"><br><br>
         
         <section class="flex-container">
-            
         <label class="label" for="id"></label><br>
-        <input type="number" id="id" name="iden" class="input_text" placeholder="INGRESAR ID"><br><br>   
-        
-        </section><br>
-        
-        <section class="flex-container">
-            
-            <button id="btn_eli" class="btn" name="eliminar" type="submit">Eliminar registro</button><br><br>
-            
+        <input type="number" id="id" name="iden" class="input_text" placeholder="INGRESAR ID">
+        <div style="margin-left: 10px;"></div>
+        <button id="btn_eli" class="btn" name="eliminar" type="submit">Eliminar registro</button>
         </section>
   
             <div style="margin-left: 20px;"></div>
             
-        <label class="label" for="Fecha">Fecha falla:</label><br>
-        <input type="date" id="Fecha" name="fecha" class="input_text"><br><br>    
-        
-        <label class="label"> Descripcion falla:</label><br>
-        <textarea class="input_text" id="Descripcion" name="descripcion"></textarea><br>
+        <section class="flex-container1">    
             
-        <label class="label" for="Fluido">Fluido:</label><br>
+        <label class="label" for="Fecha">Fecha falla:</label>
+        <input type="date" id="Fecha" name="fecha" class="input_text">
+        
+        <label class="label"> Descripcion falla:</label>
+        <textarea class="input_text" id="Descripcion" name="descripcion"></textarea>
+            
+        <label class="label" for="Fluido">Fluido:</label>
         <input type="number" id="Fluido" name="fluido" class="input_text">
             
-            <div style="margin-left: 20px;"></div>
+        <div style="margin-left: 40px;"></div>
             
-        <label class="label" for="Seco">Seco:</label><br>
+        <label class="label" for="Seco">Seco:</label>
         <input type="number" step="any" id="Seco" name="seco" class="input_text">
             
-            <div style="margin-left: 20px;"></div>
-            
-        <label class="label" for="Gas">Gas:</label><br>
-        <input type="number" id="Gas" name="gas" class="input_text"><br><br>
+        <div style="margin-left: 90px;"></div>
         
+        <label class="label" for="Gas">Gas:</label>
+        <input type="number" id="Gas" name="gas" class="input_text">
+        
+        </section><br><br>
+            
+            
  <p>Debe elegir tipo de sistemas = </p>
         
         <label class="label" for="sea">Sistema sacado</label>
@@ -98,17 +98,20 @@
         
           
         
-            <button id="btn_enviar" class="btn" name="enviar" type="submit">Enviar</button><br><br>
+        <button id="btn_enviar" class="btn" name="enviar" type="submit">Enviar</button><br><br>
         
         
         
           
         
         </form>
-      
         <button class="btn" onclick= "location.href='http://localhost/BASEFALLAS/backend/view/tablaconexion.php'">Ver Tabla</button><br><br>
         
 
+        <div class="footer">
+            <h1 class='titulo'>Cuide los pozos !!</h1>      
+        </div>
+        
     </body>    
 
     
